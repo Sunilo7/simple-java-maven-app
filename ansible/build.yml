@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Checkout source code
+      git:
+        repo: https://github.com/Sunilo7/simple-java-maven-app.git
+        dest: /home
+    - name: Build Maven project
+      shell: mvn clean install -f /home/ansible/simple-java-maven-app/pom.xml
