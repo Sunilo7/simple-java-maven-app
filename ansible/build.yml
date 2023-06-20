@@ -1,4 +1,1 @@
-- hosts: localhost
-  tasks:
-    - name: Build Maven project
-      shell: mvn clean install -f /var/lib/jenkins/workspace/Test-Ansible/simple-java-maven-app/pom.xml
+
